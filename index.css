@@ -1,0 +1,159 @@
+body {background-image: url("d.webp"); background-size: cover; background-position: center; color:white;}
+
+
+
+/* ===== GENERAL PAGE DESIGN ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("d.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    line-height: 1.7;
+}
+
+/* Dark background behind the content */
+header,
+nav,
+main,
+footer {
+    background-color: rgba(18, 30, 17, 0.92);
+}
+
+header {
+    padding: 25px 15px;
+    text-align: center;
+    border-bottom: 4px solid #548c35;
+}
+
+header h1 {
+    margin: 0;
+    color: #b7e892;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Java Edition label */
+.edition-label {
+    color: #b7e892;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ===== NAVIGATION ===== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 15px;
+    border-bottom: 2px solid #548c35;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    background-color: #355c2b;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #548c35;
+}
+
+/* ===== MAIN CONTENT ===== */
+
+main {
+    max-width: 1000px;
+    width: 92%;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #b7e892;
+    border-bottom: 2px solid #548c35;
+    padding-bottom: 6px;
+}
+
+h3 {
+    color: #e3d79b;
+}
+
+a {
+    overflow-wrap: anywhere;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Content cards */
+.guide-card {
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid #548c35;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+}
+
+/* Version information */
+.version-label {
+    display: inline-block;
+    background-color: #355c2b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Images and videos */
+main img,
+main video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+main video {
+    display: block;
+    margin: 15px auto;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid #548c35;
+}
+
+/* ===== SMALL SCREENS ===== */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    nav a {
+        padding: 7px 10px;
+    }
+}
